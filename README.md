@@ -1,13 +1,15 @@
-Project Description: Automated To-Do List Orchestrator
+Automated To-Do List Orchestrator
 
 This capstone project, built using the Google Agent Development Kit (ADK), delivers a highly dynamic and interactive solution for managing complex, multi-domain to-do lists. The system transforms a static list of tasks into an autonomous, sequential workflow, intelligently delegating tasks to specialized AI agents while maintaining a clear, conversational loop with the user.
 
 Problem Statement
+
 Traditional AI assistants often struggle with the sequential execution of a heterogeneous task list. They typically attempt to execute all tasks in parallel or fail to maintain the state of the overall workflow. This leads to disjointed user experiences, where a human is required to constantly re-initiate the process and ensure dependencies are met.
 
 The Automated To-Do List Orchestrator solves this by enforcing a controlled, step-by-step process. It guarantees that complex actions (like booking a flight) are handled by the right expert, confirmed by the user, and marked complete before moving to the next priority.
 
 Architectural Design: Hierarchical & Sequential Flow
+
 The project employs a robust hierarchical agent architecture based on the ADK's core components.
 
 A. The Root Agent (root_agent)
@@ -39,6 +41,7 @@ Movie Agent: Looks up showtimes and handles entertainment booking details.
 Study Agent: Provides guidance, plans, and resources for educational goals (like studying for a Python final).
 
 Key Technical Innovations and Features
+
 This project showcases several critical implementations necessary for production-grade agent systems:
 
 A. Sequential Triage and Orchestration (orchestrate_task function)
@@ -82,6 +85,7 @@ mark_complete(ID): Updates a task status to completed (✅).
 delete_task(ID): Fully removes tasks from the list, a critical feature added to clean up the workspace after completion.
 
 Conclusion and Future Scope
+
 The Automated To-Do List Orchestrator successfully demonstrates the power of the ADK in building sophisticated, stateful, and conversational applications. It moves beyond simple question-answering to provide a guided, interactive service.
 
 The primary value lies in the secure and reliable sequential workflow, which is essential for any process-driven application. Future enhancements could include integrating a more advanced priority system (e.g., scheduling or urgency) and incorporating systems for visual confirmation of manual tasks.
